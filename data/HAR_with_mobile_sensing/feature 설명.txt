@@ -1,0 +1,79 @@
+==== time domain ====
+
+BodyAcc [mean, std, mad, max, min, energy, iqr, entropy, ] (x, y, z) / [sma]
+	/ [arCoeff] (x-1, x-2, x-3, x-4, y-1, y-2, y-3, y-4, z-1, z-2, z-3, z-4)
+	/ [correlation] (x-y, x-z, y-z)
+ 
+GravityAcc [mean, std, mad, max, min, energy, iqr, entropy, ] (x, y, z) / [sma]
+	/ [arCoeff] (x-1, x-2, x-3, x-4, y-1, y-2, y-3, y-4, z-1, z-2, z-3, z-4)
+	/ [correlation] (x-y, x-z, y-z)
+
+BodyAccJerk [mean, std, mad, max, min, energy, iqr, entropy, ] (x, y, z) / [sma]
+	/ [arCoeff] (x-1, x-2, x-3, x-4, y-1, y-2, y-3, y-4, z-1, z-2, z-3, z-4)
+	/ [correlation] (x-y, x-z, y-z)
+
+BodyGyro [mean, std, mad, max, min, energy, iqr, entropy, ] (x, y, z) / [sma]
+	/ [arCoeff] (x-1, x-2, x-3, x-4, y-1, y-2, y-3, y-4, z-1, z-2, z-3, z-4)
+	/ [correlation] (x-y, x-z, y-z)
+
+BodyGyroJerk [mean, std, mad, max, min, energy, iqr, entropy, ] (x, y, z) / [sma]
+	/ [arCoeff] (x-1, x-2, x-3, x-4, y-1, y-2, y-3, y-4, z-1, z-2, z-3, z-4)
+	/ [correlation] (x-y, x-z, y-z)
+
+BodyAccMag [mean, std, mad, max, min, energy, iqr, entropy, sma]
+	/ [arCoeff] (1, 2, 3, 4)
+
+GravityAccMag [mean, std, mad, max, min, energy, iqr, entropy, sma]
+	/ [arCoeff] (1, 2, 3, 4)
+
+BodyAccJerkMag [mean, std, mad, max, min, energy, iqr, entropy, sma]
+	/ [arCoeff] (1, 2, 3, 4)
+
+BodyGyroMag [mean, std, mad, max, min, energy, iqr, entropy, sma]
+	/ [arCoeff] (1, 2, 3, 4)
+
+BodyGyroJerkMag [mean, std, mad, max, min, energy, iqr, entropy, sma]
+	/ [arCoeff] (1, 2, 3, 4)
+
+==== frequency domain ====
+
+BodyAcc [mean, std, mad, max, min, energy, iqr, entropy, maxInds, meanFreq, skewness,
+	kurtosis]   (x, y, z) / [sma]
+	/ [bandsEnergy] (1-8, 9-16, 17-24, 25-32, 33-40, 41-48, 49-56, 57-64) 
+	/ [bandsEnergy] (1-16, 17-32, 33-48, 49-64)
+	/ [bandsEnergy] (1-24, 25-48)
+
+BodyAccJerk [mean, std, mad, max, min, energy, iqr, entropy, maxInds, meanFreq, skewness,
+	kurtosis]   (x, y, z) / [sma]
+	/ [bandsEnergy] (1-8, 9-16, 17-24, 25-32, 33-40, 41-48, 49-56, 57-64) 
+	/ [bandsEnergy] (1-16, 17-32, 33-48, 49-64)
+	/ [bandsEnergy] (1-24, 25-48)
+
+BodyGyro [mean, std, mad, max, min, energy, iqr, entropy, maxInds, meanFreq, skewness,
+	kurtosis]   (x, y, z) / [sma]
+	/ [bandsEnergy] (1-8, 9-16, 17-24, 25-32, 33-40, 41-48, 49-56, 57-64) 
+	/ [bandsEnergy] (1-16, 17-32, 33-48, 49-64)
+	/ [bandsEnergy] (1-24, 25-48)
+BodyAccMag [mean, std, mad, max, min, sma, energy, iqr, entropy, maxInds, meanFreq, skewness,
+	       kurtosis]
+
+BodyAccJerkMag [mean, std, mad, max, min, sma, energy, iqr, entropy, maxInds, meanFreq, skewness,
+	       kurtosis]
+
+BodyAccMag [mean, std, mad, max, min, sma, energy, iqr, entropy, maxInds, meanFreq, skewness,
+	       kurtosis]
+
+BodyAccJerkMag [mean, std, mad, max, min, sma, energy, iqr, entropy, maxInds, meanFreq, skewness,
+	       kurtosis]
+
+BodyGyroMag [mean, std, mad, max, min, sma, energy, iqr, entropy, maxInds, meanFreq, skewness,
+	       kurtosis]
+
+BodyGyroJerkMag [mean, std, mad, max, min, sma, energy, iqr, entropy, maxInds, meanFreq, skewness,
+	       kurtosis]
+
+angle(X, gravityMean), angle(Y, gravityMean), angle(Z, gravityMean)
+
+Subject
+
+Activity
