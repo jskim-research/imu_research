@@ -1,5 +1,7 @@
 import keras
 import tensorflow as tf
+import numpy as np
+import cv2
 from tensorflow.keras import layers, metrics
 from tensorflow.keras.layers import Layer
 from tensorflow.keras.models import Model
@@ -114,3 +116,17 @@ if __name__ == "__main__":
     grad = tape.gradient(out, final_conv_out)  # d_out / d_final_conv_out
     print(final_conv_out.shape)
     print(grad.shape)
+    np_grad = grad.numpy()
+    np_grad = np.squeeze(np_grad)
+    np_final_conv_out = np.squeeze(final_conv_out.numpy())
+    conv_shape = np_grad.shape  # (H, W, C)
+    Z = conv_shape[0] * conv_shape[1]
+
+    weight_of_feature_k = np.sum(np.sum(np_grad, axis=0), axis=0) / Z
+
+    for k in range(conv_shape[2]):
+        grad_cam = weight_of_feature_k[k] * np_final_conv_out[:, :, k]
+        print(grad_cam.shape)
+        grad_cam = cv2.resize(grad_cam, dsize=(128, 32), interpolation=cv2.INTER_CUBIC)
+        print(grad_cam.shape)
+
